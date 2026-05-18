@@ -15,6 +15,45 @@ System.out.println(index);
 }//oUtput :- 3 
 }
 
+#BINARY SEARCH 
+public class Main{
+public static void main(String[] args){
+int[] arr={1,3,5,7,9};
+int target = 7;
+int low=0,high=arr.length-1;
+int index=-1;
+while(low<= high){
+int mid=(low+high)/2;
+if(arr[mid]==target){
+index=mid;
+break;
+} else if(arr[mid]<target){
+low=mid+1;
+} else{
+high=mid-1;
+}
+}
+System.out.println(index);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #MAXIMUM & MINIMUM ARRAYS
 public class Arrays {
     public static void main(String[] args) {
@@ -35,7 +74,7 @@ public class Arrays {
 } //Max=9,Min=1
 
 
-#RECERSE ARRAY 
+#REvERSE ARRAY 
 import java.util.Arrays;
 public class ReverseArrays {
     public static void main(String[] args) {
@@ -54,3 +93,5 @@ public class ReverseArrays {
 }
 
 
+
+#
