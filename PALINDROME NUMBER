@@ -1,0 +1,39 @@
+PALINDROME NUMBER:-
+A palindrome number is a number that reads the same forward and backward.
+
+ALGORITHM:-
+1.Start
+2.Read the number
+3.Store the original number in a temporary variable
+4.Reverse the number using loop
+5.Compare original number with reversed number
+6.If both are equal → Palindrome
+7.Else → Not Palindrome
+8.Stop
+
+
+
+PROGRAM:-
+public class Main{
+public static void main(String[] args){
+int num=121;
+int temp=num;
+int rev=0;
+
+while (num > 0){
+ int  digit = num % 10;
+    rev = rev * 10 + digit;
+    num = num / 10;
+
+}
+if (temp == rev){
+System.out.println("Palindrome");
+}
+else{
+System.out.println("Not Palindrome");
+}
+}
+}
+
+
+OUTPUT:-Palindrome
