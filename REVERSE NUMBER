@@ -1,1 +1,45 @@
+Reverse Number :-
+        To reverse a number, you basically flip its digits from back to front.
 
+
+algorithm:-
+
+Step 1:-
+Start
+Step 2:-
+Initialize variables
+num → original number
+rev = 0
+Step 3:-
+Repeat while num > 0
+Find last digit
+digit = num % 10
+Add digit to reverse number
+rev = rev * 10 + digit
+Remove last digit from original number
+num = num // 10
+Step 4:-
+Display rev
+Step 5:-
+Stop
+
+
+
+
+
+
+
+PROGRAM:-
+
+public class main{
+public static void main(String[] args){
+int num=4321;
+int rev=0;
+while(num>0){
+int digit=num%10;
+   rev=rev*10+digits;
+   num=num/10;
+}
+System.out.println(rev);
+}
+}
